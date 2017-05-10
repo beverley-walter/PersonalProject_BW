@@ -4,7 +4,7 @@
 
 Clothing Library or OpShop for Pre-school Childrens Clothing</b>
 
-People can donate clothing as a gift or a loan item. They will be thanked for gifts (generate a thankful email) and provided with credits in exchange for loan items. They can then use those credits to borrow items of clothing. They will be able to search by age/gender/style of clothing they want to 'borrow'. 
+<em>People can donate clothing as a gift or a loan item. They will be thanked for gifts (generate a thankful email) and provided with credits in exchange for loan items. They can then use those credits to borrow items of clothing. They will be able to search by age/gender/style of clothing they want to 'borrow'.</em>
 
 # MVP
 Admin story - I need to create a database of clients and items. Plus a form for people to add their unwanted clothing.
