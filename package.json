@@ -1,0 +1,20 @@
+{
+  "name": "gurgle",
+  "version": "1.0.0",
+  "description": "<b> Phase 2 - Individual project for EDA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beverley-walter/PersonalProject_BW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beverley-walter/PersonalProject_BW/issues"
+  },
+  "homepage": "https://github.com/beverley-walter/PersonalProject_BW#readme"
+}
