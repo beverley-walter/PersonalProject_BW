@@ -8,6 +8,7 @@ Clothing Library or OpShop for Pre-school Childrens Clothing</b>
 
 # MVP
 <em>Admin story - I need to create a database of clients and items. Requiring two forms, 1) For new clients and 2) For people to add their unwanted clothing.</em>
+
 One 1 Include: Client details - Name, tel/mob, email, address, membership number, photo, (about me/my kids, comment/rate site.)<br>
 On 2 Include: Add item: Clothing details - Item photo, description (any flaws/marks).<br>
               Drop down for: boys, girls, uni-sex, (shoes, maternity, accessories, extranious items - bedding, ?).<br>
