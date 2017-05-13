@@ -11,7 +11,7 @@ var db = require('../db')
 
 test('getUsers gets all users', function (t) {
   // One for each letter of the alphabet!
-  var expected = 26
+  var expected = 20
   return db.getUsers(t.context.connection)
     .then(function (result) {
       var actual = result.length
@@ -19,11 +19,11 @@ test('getUsers gets all users', function (t) {
     })
 })
 
-test('getUsers gets a single user', function (t) {
-  var expected = 'Ambitious Aardvark'
-  return db.getUser(99901, t.context.connection)
+test('getUser gets a single user', function (t) {
+  var expected = 'Bev Walter'
+  return db.getUser(105, t.context.connection)
     .then(function (result) {
-      var actual = result[0].name
+      var actual = result[4].name
       t.is(expected, actual)
     })
 })

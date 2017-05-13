@@ -1,0 +1,19 @@
+#page {
+   background-color: white;
+   margin: 0 auto;
+   max-width: 960px;
+   text-align: center;
+}
+
+h1 h2 h3 h4{
+   font-family: 'Montserrat', sans-serif;
+   color: #4285F4;
+}
+
+img{
+   max-width: 400px;
+}
+p{
+   font-family: 'Montserrat', sans-serif;
+   color: #21437A;
+}
