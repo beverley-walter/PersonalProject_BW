@@ -5,7 +5,6 @@ var config = require('./knexfile')[environment]
 var connection = require('knex')(config)
 
 var server = createServer(connection)
-
 var PORT = process.env.PORT || 3000
 
 server.listen(PORT, function () {

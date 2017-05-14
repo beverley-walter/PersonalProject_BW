@@ -1,6 +1,7 @@
 exports.seed = function (knex, Promise) {
   return knex('members').del()
     .then(function () {
+      
       return Promise.all([
         knex('members').insert({MembershipId: 101, name: 'Rebecca Hailstone', email: 'beverley@asteriskdesign.co.nz', phone: '012 345 6789', address: '1 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingId: '1'}),
         knex('members').insert({MembershipId:102, name: 'Sarah Grundy', email: 'beverley.walter@lycos.com', phone: '012 345 6788', address: '2 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingId: '1'}),

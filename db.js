@@ -9,5 +9,21 @@ function getMembers (connection) {
 }
 
 function getMember (id, connection) {
-  return connection('members').where('MembershipId', id)
+  return connection('member').where('MembershipId', id)
 }
+
+
+/*function getAllItems (connection) {
+return connection('posts').select()
+  .join('users','users.id','=','users_id')
+
+}
+
+function createPost(title, posts, connection) {
+ return connection('posts')
+ .insert({
+   title: title,
+   posts: posts
+ })
+ }
+ */

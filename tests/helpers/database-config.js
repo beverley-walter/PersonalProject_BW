@@ -12,7 +12,6 @@ module.exports = (test, createServer) => {
         return t.context.connection.seed.run()
       })
   })
-
   // Destroy the database connection after each test.
   test.afterEach(function (t) {
     t.context.connection.destroy()

@@ -16,6 +16,8 @@ test('GET /', (t) => {
       t.is($('li').first().text(), 'Rebecca Hailstone, beverley@asteriskdesign.co.nz, 012 345 6789, 1 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingId: '1')
     })
 
+})
+
     test('GET /', (t) => {
   return request(t.context.app)
     .get('/member/105')

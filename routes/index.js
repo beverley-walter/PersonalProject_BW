@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
       res.render('index', {members: members})
     })
     .catch(function (err) {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
+      res.status(400).send('DATABASE ERROR: ' + err.message)
     })
 })
 
@@ -21,10 +21,10 @@ router.get('/members', function (req, res) {
       res.render('table', {members: members})
     })
     .catch(function (err) {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
+      res.status(400).send('DATABASE ERROR: ' + err.message)
     })
 })
-
+/*
 router.get('/member/:id', function(req, res) {
     db.getMember(req.params.id, req.app.get('connection'))
         .then(function(member) {
@@ -32,11 +32,9 @@ router.get('/member/:id', function(req, res) {
             res.render('table', { member: member })
         })
         .catch(function(err) {
-            res.status(500).send('DATABASE ERROR: ' + err.message)
+            res.status(400).send('DATABASE ERROR: ' + err.message)
         })
 })
-
-
 
 router.get('/membershipForm', function (req, res) {
   db.getUsers(req.app.get('connection'))
@@ -44,7 +42,7 @@ router.get('/membershipForm', function (req, res) {
       res.render('form', { membershipForm: membershipForm })
     })
     .catch(function (err) {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
+      res.status(400).send('DATABASE ERROR: ' + err.message)
     })
 })
 
@@ -54,8 +52,9 @@ router.get('/memberId', function (req, res) {
       res.render('profile', { member: member })
     })
     .catch(function (err) {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
+      res.status(400).send('DATABASE ERROR: ' + err.message)
     })
 })
+*/
 
 module.exports = router
