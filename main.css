@@ -37,7 +37,7 @@ th:last-child,
 td:last-child {
   padding-right: 0; }
 
-/*Button - primary*/
+/*otherButton*/
 .input[type="submit"], input[type="reset"], input[type="button"] {
     display: inline-block;
     height: 38px;
