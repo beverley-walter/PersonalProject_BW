@@ -1,24 +1,54 @@
-<table class="u-full-width">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gurgl</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+  </head>
+<body>
+   <div id="page">
+      <img src="/images/gurglLogo.svg" alt="Gurgl Logo" />
+  <table class="u-full-width">
   <thead>
     <tr>
       <th>Name</th>
-      <th>Age</th>
-      <th>Sex</th>
-      <th>Location</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Profile Created</th>
+      <th>Membership ID</th>
+      <th>Rating</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Dave Gamache</td>
-      <td>26</td>
-      <td>Male</td>
-      <td>San Francisco</td>
-    </tr>
-    <tr>
-      <td>Dwayne Johnson</td>
-      <td>42</td>
-      <td>Male</td>
-      <td>Hayward</td>
-    </tr>
+     {{#each members}}
+       <tr>
+         <td>{{name}}</td>
+         <td>{{email}}</td>
+         <td>{{phone}}</td>
+         <td>{{address}}</td>
+         <td>{{createdOn}}</td>
+         <td>{{MembershipId}}</td>
+         <td>{{ratingId}}</td>
+       </tr>
+    {{/each}}
   </tbody>
 </table>
+</div>
+</body>
+</html>
+
+<!--
+<ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+--!>

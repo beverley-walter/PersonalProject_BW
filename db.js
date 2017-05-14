@@ -1,13 +1,13 @@
 
 module.exports = {
-  getUser: getUser,
-  getUsers: getUsers
+  getMember: getMember,
+  getMembers: getMembers
 }
 
-function getUsers (connection) {
-  return connection('users').select()
+function getMembers (connection) {
+  return connection('members').select()
 }
 
-function getUser (id, connection) {
-  return connection('users').where('id', id)
+function getMember (id, connection) {
+  return connection('members').where('MembershipId', id)
 }

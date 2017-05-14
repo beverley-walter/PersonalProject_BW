@@ -8,6 +8,8 @@ configureDatabase(test)
 
 var db = require('../db')
 
+
+
 test('getMembers gets all members', function (t) {
   var expected = 20
   return db.getMembers(t.context.connection)
@@ -24,4 +26,13 @@ test('getMember gets a single user', function (t) {
       var actual = result[4].name
       t.is(expected, actual)
     })
+})
+
+test('getClothingById will get one item of clothing', function (t) {
+  var expected = 'pants_1'
+  return db.getClothingById(5, t.context.connection)
+    .then(function (result) {
+      var actual = result[5].name
+      t.is(expected, actual)
+   })
 })
