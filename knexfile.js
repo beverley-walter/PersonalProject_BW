@@ -15,11 +15,10 @@ module.exports = {
     connection: {
       filename: ':memory:'
     },
-    seeds: {
-    directory: './test/helpers/seeds'
-},
+    seeds: './seeds',
     useNullAsDefault: true
-  },
+    //directory: './test/helpers/seeds'
+},
 
   production: {
     client: 'postgresql',
