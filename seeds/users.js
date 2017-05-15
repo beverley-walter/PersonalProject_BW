@@ -5,7 +5,7 @@ exports.seed = function (knex, Promise) {
       return Promise.all([
         knex('members').insert({MembershipId: 101, name: 'Rebecca Hailstone', email: 'beverley@asteriskdesign.co.nz', phone: '012 345 6789', address: '1 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingID: '1'}),
         knex('members').insert({MembershipId:102, name: 'Sarah Grundy', email: 'beverley.walter@lycos.com', phone: '012 345 6788', address: '2 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingID: '1'}),
-        knex('members').insert({MembershipId:103, name: 'Corry Walter', email: 'corry.walter@xtra.co.nz', phone: '012 345 6787', address: '3 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', : '1'}),
+        knex('members').insert({MembershipId:103, name: 'Corry Walter', email: 'corry.walter@xtra.co.nz', phone: '012 345 6787', address: '3 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingID: '1'}),
         knex('members').insert({MembershipId:104, name: 'Mel Clancy', email: 'absolutedelirium@ymail.com', phone: '012 345 6786', address: '4 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingID: '1'}),
         knex('members').insert({MembershipId:105, name: 'Bev Walter', email: 'bevwaltersemail@gmail.com', phone: '012 345 6785', address: '5 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingID: '1'}),
         knex('members').insert({MembershipId:106, name: 'Kaye Sowerby', email: 'flying.fox@example.org', phone: '012 345 6784', address: '6 Tertiary Terrace , Tipperery', createdOn: '20/05/2017', ratingID: '1'}),
