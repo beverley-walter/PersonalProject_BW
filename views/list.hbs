@@ -10,7 +10,21 @@
    <div id="page">
       <img src="/images/gurglLogo.svg" alt="Gurgl Logo" />
    </div>
+   <ul class= "clothing item">
+      {{#each members}}
+        <li>{{clothing_ID}}</li>
+         <ul>
+           <li>Photo_0</li>
+           <li>Photo_1</li>
+         </ul>
+        <li>{{styleID}}</li>
+        <li>{{size_ID}}</li>
+        <li>{{brand_ID}}</li>
+        <li>{{condition_ID}}</li>
+        <li>{{status_ID}}</li>
+        <li>{{description}}</li>
+
+      {{#each}}
+   </ul>
 </body>
 </html>
-
-<!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels -->

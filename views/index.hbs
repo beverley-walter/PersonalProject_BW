@@ -34,24 +34,29 @@
  </div>
 
 </div>
-Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+Note: columns can be nested, but it's not recommended since grid has %-based gutters  -->
 
-     <div id="page">
-        <img src="/images/gurglLogo.svg" alt="Gurgl Logo" />
-       <h1><b>Hi! Welcome to Gurgl</b></h1>
-       <h2>Your new used-clothing library for infants</h2>
-       <h3><em>Our site is currently in production.</em></h3>
-       <h3><em>So check back soon to find out more about the launch<br> of this exciting new service.</em></h3>
-         <p>
-         If you'd like to be the first to know about when we are ready to rock and roll, please click below and fill in your details.<br>
-         We will send you a membership number via email and you'll be contacted as soon as we are open for business!
-         </p>
-         <p>
-         <input type="button" name="Sign Up Now" value="Yes please, I'd like to sign up now">
-         </p>
-         <p>
-            <em>Gurgl is a not for profit organisation.</em>
-         </p>
+      <div id="page" class="container">
+         <div class="row">
+            <div class="column">
+               <img src="/images/gurglLogo.svg" alt="Gurgl Logo" />
+               <h1><b>Hi! Welcome to Gurgl</b></h1>
+               <h2>Your new used-clothing library for infants</h2>
+               <h3><em>Our site is currently in production.</em></h3>
+               <h3><em>So check back soon to find out more about the launch<br> of this exciting new service.</em></h3>
+               <p>
+               If you'd like to be the first to know about when we are ready to rock and roll, please click below and fill in your details.<br>
+               We will send you a membership number via email and you'll be contacted as soon as we are open for business!
+               </p>
+               <p>
+                  //Add div class id - to link button with react component
+                  <Button clickMsg="Sign Up Now" unClick="Yes please, I'd like to join"></Button>
+               </p>
+               <p>
+                  <em>Gurgl is a not for profit organisation.</em>
+               </p>
+            </div>
+         </div>
       </div>
   </body>
 </html>

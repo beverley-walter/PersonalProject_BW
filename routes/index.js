@@ -14,6 +14,21 @@ router.get('/', function (req, res) {
     })
 })
 
+router.get('/signup', function (req, res) {
+   res.render('form');
+})
+
+// router.get('/signup', function (req, res) {
+//   db.getMembers(req.app.get('connection'))
+//     .then(function (signup) {
+// //      console.log(signup)
+//       res.render('index', {signup: signup})
+//     })
+//     .catch(function (err) {
+//       res.status(500).send('DATABASE ERROR: ' + err.message)
+//     })
+// })
+
 router.get('/members', function (req, res) {
   db.getMembers(req.app.get('connection'))
     .then(function (members) {
