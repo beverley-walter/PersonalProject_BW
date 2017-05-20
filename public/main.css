@@ -100,25 +100,25 @@
 .u-pull-left {
   float: left; }
 
-#page {
+.container {
    background-color: white;
    margin: 0 auto;
    max-width: 75%;
    text-align: center;
 }
 
-#page h1{
-   font-family: 'Montserrat', 'Raleway', sans-serif;
+.container h1{
+   font-family: 'Montserrat', sans-serif;
    color: #4285F4;
 }
 
-#page h2, #page h3{
-   font-family: 'Montserrat', 'Raleway',sans-serif;
+.container h2, .container h3{
+   font-family: 'Montserrat',sans-serif;
    color: #21437A;
 }
 
 p, th, td, li{
-   font-family: 'Montserrat', 'Raleway',sans-serif;
+   font-family: 'Montserrat',sans-serif;
    color: #21437A;
 }
 
@@ -241,6 +241,12 @@ input[type="submit"], input[type="reset"], input[type="button"] {
     border: 1px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
+}
+
+.footer{
+   font-family: 'Montserrat',sans-serif;
+   color: #21437A;
+   margin-top: 500px;
 }
 /*
    .purchaseButton{
