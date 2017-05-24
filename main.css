@@ -161,6 +161,8 @@ label, legend {
   display: block;
   margin-bottom: .5rem;
   font-weight: 600;
+  font-family: 'Montserrat',sans-serif;
+  color: #21437A;
 }
 
 fieldset {
@@ -176,6 +178,8 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal;
+  font-family: 'Montserrat',sans-serif;
+  color: #21437A;
 }
 
 
@@ -243,10 +247,9 @@ input[type="submit"], input[type="reset"], input[type="button"] {
     box-sizing: border-box;
 }
 
-.footer{
+.container footer{
    font-family: 'Montserrat',sans-serif;
    color: #21437A;
-   margin-top: 500px;
 }
 /*
    .purchaseButton{
