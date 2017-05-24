@@ -8,6 +8,7 @@ const Form = props => {
     return (
       <span>
         <Home/>
+
         <div className="container">
            <form>
               <div className="row">
@@ -22,12 +23,12 @@ const Form = props => {
                  </div>
               </div>
               <div className="row">
-                 <div className="six columns">
+                 <div className="four columns">
                     <label for="phoneInput">Phone</label>
                     <input className="u-full-width" type="tel" placeholder="012 345 6789" id="phoneInput" />
                  </div>
 
-                 <div className="six columns">
+                 <div className="eight columns">
                     <label for="addressInput">Address</label>
                     <input className="u-full-width" type="text" placeholder="1 Home Place, Welivehere, Wellington" id="addressInput" />
                  </div>

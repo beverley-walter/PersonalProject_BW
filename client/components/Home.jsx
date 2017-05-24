@@ -10,9 +10,11 @@ const Home = props => {
       <p>
         If you would like to be the first to know about when we are ready to rock and roll, please click below and fill in your details.<br/> We will send you a membership number via email and you will be contacted as soon as we are open for business!
       </p>
-      <p>
+
+      <form onsubmit = "return res.redirect('/#/form')">
       <input className="PButton" type="submit" value="Yes, please I'd like to sign up" />
-      </p>
+      </form>
+
     </div>
   )
 }
