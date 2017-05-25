@@ -3,6 +3,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Home from './Home'
 import Form from './Form'
+import Gallery from './Gallery'
 
 
 const App = () => (
@@ -10,7 +11,7 @@ const App = () => (
     <div>
       <Route path='/' component={Home} />
       <Route path='/form' component={Form} />
-
+      <Route path='/gallery' component={Gallery} />
     </div>
   </Router>
 )

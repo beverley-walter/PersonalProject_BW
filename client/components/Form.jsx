@@ -3,11 +3,9 @@ import { Link } from 'react-router'
 
 import Home from './Home'
 
-//   <Home/>
 const Form = props => {
     return (
       <span>
-
         <div className="container">
            <form>
               <div className="row">

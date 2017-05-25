@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Gallery from './Gallery'
+import Home from './Home'
 
 const Gallery = props => {
     return (
@@ -10,21 +10,21 @@ const Gallery = props => {
             <div className="row">
 
                <div className="two columns">
-                  <img>
+                  <img/>
                   <label for="clothingPhoto"> Awesome! </label>
-                  <tag>
+                  <Link></Link>
                </div>
 
                <div className="two columns">
-                  <img>
+                  <img/>
                   <label for="clothingPhoto"> Cute! </label>
-                  <tag>
+                  <Link></Link>
                </div>
 
                <div className="two columns">
-                  <img>
+                  <img/>
                   <label for="clothingPhoto"> Perfect! </label>
-                  <tag>
+                  <Link></Link>
                </div>
 
             </div>

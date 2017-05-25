@@ -1,13 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import Home from './Home'
+
 class GButton extends React.Component {
    constructor (props) {
       super (props)
       this.state = {
          clicked: false,
          clickMsg: 'No thanks! I wanna see the gallery',
-         unClick: 'Yay! Lets go',
+         unClick: 'Thanks! I am done here, lets go home',
          clickRoute: '/gallery',
          unclickRoute: '/'
       }

@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import Home from './Home'
+
 class PButton extends React.Component {
    constructor (props) {
       super (props)
@@ -19,11 +21,11 @@ class PButton extends React.Component {
 
    render (){
       return (
-         <button onClick={ (e) => this.handleClick (e) }>
-            <Link to={this.state.clicked ? this.state.clickRoute : this.state.unclickRoute}>
-            {(this.state.clicked )? this.state.unClick : this.state.clickMsg}
-            </Link>
-         </button>
+            <button onClick={ (e) => this.handleClick (e) }>
+               <Link to={this.state.clicked ? this.state.unclickRoute : this.state.clickRoute}>
+               {(this.state.clicked )? this.state.unClick : this.state.clickMsg}
+               </Link>
+            </button>
       )
    }
 
