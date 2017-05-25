@@ -1,9 +1,11 @@
 * {
-   border: 1px,
-   solid red;
+   border: 1px solid red;
 }
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Generate a 960px grid, with 12 columns and 10px gutter */
+body {
+  background: url(http://griddle.it/960-12-10) repeat-y center top;
+}
+/* Grid */
 .container {
   position: relative;
   width: 100%;
@@ -57,59 +59,6 @@
   .two-thirds.column              { width: 65.3333333333%; }
 
   .one-half.column                { width: 48%; }
-
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
-
-}
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.u-pull-right {
-  float: right;
-}
-
-.u-pull-left {
-  float: left;
-}
 
 .container {
    background-color: white;
@@ -173,10 +122,6 @@ label, legend {
   color: #21437A;
 }
 
-fieldset {
-  padding: 0;
-  border-width: 0;
-}
 
 input[type="checkbox"], input[type="radio"] {
   display: inline;
