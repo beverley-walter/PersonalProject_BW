@@ -9,9 +9,11 @@ import Gallery from './Gallery'
 const App = () => (
   <Router>
     <div>
-      <Route path='/' component={Home} />
+      <Route exact path='/' component={Home} />
+      <Route path='/form' component={Home} />
       <Route path='/form' component={Form} />
-      <Route path='/gallery' component={Gallery} />
+      <Route exact path='/gallery' component={Gallery} />
+      <Route path='/gallery/:id' component={Gallery} />
     </div>
   </Router>
 )

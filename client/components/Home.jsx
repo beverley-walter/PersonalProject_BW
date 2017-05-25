@@ -13,7 +13,7 @@ const Home = (props) => {
         If you would like to be the first to know about when we are ready to rock and roll, please click below and fill in your details.<br/> We will send you a membership number and login details via email and you will be contacted as soon as we are open for business!
       </p>
       <p>
-        You will be able to use your new login information to kit your little-ones out with the cutest pre-loved clothing. 
+        You will be able to use your new login information to kit your little-ones out with the cutest pre-loved clothing.
       </p>
       <PButton />
       <GButton />
