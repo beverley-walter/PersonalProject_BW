@@ -7837,7 +7837,12 @@ const Home = props => {
       null,
       'If you would like to be the first to know about when we are ready to rock and roll, please click below and fill in your details.',
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-      ' We will send you a membership number via email and you will be contacted as soon as we are open for business!'
+      ' We will send you a membership number and login details via email and you will be contacted as soon as we are open for business!'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'You will be able to use your new login information to kit your little-ones out with the cutest pre-loved clothing.'
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__PButton__["a" /* default */], null),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__GButton__["a" /* default */], null)
@@ -11452,6 +11457,8 @@ module.exports = ReactPropTypesSecret;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Form__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Gallery__ = __webpack_require__(289);
+
 
 
 
@@ -11465,7 +11472,8 @@ const App = () => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/', component: __WEBPACK_IMPORTED_MODULE_2__Home__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/form', component: __WEBPACK_IMPORTED_MODULE_3__Form__["a" /* default */] })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/form', component: __WEBPACK_IMPORTED_MODULE_3__Form__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/gallery', component: __WEBPACK_IMPORTED_MODULE_4__Gallery__["a" /* default */] })
   )
 );
 
@@ -11490,14 +11498,11 @@ module.exports = __webpack_require__(128);
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Home__ = __webpack_require__(70);
 
 
 
 
-
-//   <Home/>
 const Form = props => {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'span',
@@ -28638,6 +28643,9 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(70);
+
+
 
 
 
@@ -28663,7 +28671,7 @@ class PButton extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
          { onClick: e => this.handleClick(e) },
          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-            { to: this.state.clicked ? this.state.clickRoute : this.state.unclickRoute },
+            { to: this.state.clicked ? this.state.unclickRoute : this.state.clickRoute },
             this.state.clicked ? this.state.unClick : this.state.clickMsg
          )
       );
@@ -28713,6 +28721,9 @@ class PButton extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(70);
+
+
 
 
 
@@ -28722,7 +28733,7 @@ class GButton extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       this.state = {
          clicked: false,
          clickMsg: 'No thanks! I wanna see the gallery',
-         unClick: 'Yay! Lets go',
+         unClick: 'Thanks! I am done here, lets go home',
          clickRoute: '/gallery',
          unclickRoute: '/'
       };
@@ -28747,6 +28758,70 @@ class GButton extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (GButton);
+
+/***/ }),
+/* 289 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(70);
+
+
+
+
+
+const Gallery = props => {
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'span',
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'div',
+         { className: 'container' },
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'row' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'div',
+               { className: 'two columns' },
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', null),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'label',
+                  { 'for': 'clothingPhoto' },
+                  ' Awesome! '
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], null)
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'div',
+               { className: 'two columns' },
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', null),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'label',
+                  { 'for': 'clothingPhoto' },
+                  ' Cute! '
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], null)
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'div',
+               { className: 'two columns' },
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', null),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'label',
+                  { 'for': 'clothingPhoto' },
+                  ' Perfect! '
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], null)
+            )
+         )
+      )
+   );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Gallery);
 
 /***/ })
 /******/ ]);
