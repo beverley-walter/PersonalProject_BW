@@ -21,7 +21,7 @@ class PButton extends React.Component {
 
    render (){
       return (
-            <button onClick={ (e) => this.handleClick (e) }>
+            <button className='button' onClick={ (e) => this.handleClick (e) }>
                <Link to={this.state.clicked ? this.state.unclickRoute : this.state.clickRoute}>
                {(this.state.clicked )? this.state.unClick : this.state.clickMsg}
                </Link>

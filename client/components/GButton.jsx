@@ -6,13 +6,6 @@ import Home from './Home'
 class GButton extends React.Component {
    constructor (props) {
       super (props)
-      this.state = {
-         clicked: false,
-         clickMsg: 'No thanks! I wanna see the gallery',
-         unClick: 'Thanks! I am done here, lets go home',
-         clickRoute: '/gallery',
-         unclickRoute: '/'
-      }
    }
 
    handleClick (e) {
@@ -21,9 +14,8 @@ class GButton extends React.Component {
 
    render (){
       return (
-         <button onClick={ (e) => this.handleClick (e) }>
-            <Link to={this.state.clicked ? this.state.clickRoute : this.state.unclickRoute}>
-            {(this.state.clicked )? this.state.unClick : this.state.clickMsg}
+         <button className='button' onClick={ (e) => this.handleClick (e) }>
+            <Link to='/gallery'> No thanks! I wanna see the gallery
             </Link>
          </button>
       )

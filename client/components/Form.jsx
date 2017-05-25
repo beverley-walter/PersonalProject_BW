@@ -32,7 +32,7 @@ const Form = props => {
               </div>
               <div className="row">
                  <div className="twelve columns">
-                    <input className="Button" type="submit" value="Submit" />
+                    <input className="button" type="submit" value="Submit" />
                  </div>
               </div>
            </form>
