@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-//import * as localDb from '../localDb'
 import Home from './Home'
 
+//   <Home/>
 const Form = props => {
     return (
       <span>
-        <Home/>
 
         <div className="container">
            <form>
@@ -35,7 +34,7 @@ const Form = props => {
               </div>
               <div className="row">
                  <div className="twelve columns">
-                    <input className="PButton" type="submit" value="Submit" />
+                    <input className="Button" type="submit" value="Submit" />
                  </div>
               </div>
            </form>
@@ -45,3 +44,5 @@ const Form = props => {
 }
 
 export default Form
+
+//Once complete from to redirect to membership table.

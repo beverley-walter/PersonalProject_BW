@@ -1,6 +1,8 @@
 import React from 'react'
+import PButton from './PButton'
+import GButton from './GButton'
 
-const Home = props => {
+const Home = (props) => {
   return(
     <div>
       <h1><b>Hi! Welcome to Gurgl</b></h1>
@@ -10,13 +12,18 @@ const Home = props => {
       <p>
         If you would like to be the first to know about when we are ready to rock and roll, please click below and fill in your details.<br/> We will send you a membership number via email and you will be contacted as soon as we are open for business!
       </p>
-
-      <form onsubmit = "return res.redirect('/#/form')">
-      <input className="PButton" type="submit" value="Yes, please I'd like to sign up" />
-      </form>
-
+      <PButton />
+      <GButton />
     </div>
   )
 }
+
+
+// document.addEventListener('runAudio', () => {
+//   ReactDOM.render(
+//     <Audio />,
+//     document.getElementById('Audio')
+//   )
+// })
 
 export default Home
