@@ -1,11 +1,10 @@
-* {
+/** {
    border: 1px solid red;
 }
-/* Generate a 960px grid, with 12 columns and 10px gutter */
-body {
+/* Generate a 960px grid, with 12 columns and 10px gutter body {
   background: url(http://griddle.it/960-12-10?color=fdfdfd) repeat-y center top;
+}*/
 
-}
 /* Grid */
 .container {
   position: relative;
@@ -199,7 +198,9 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
     cursor: pointer;
     box-sizing: border-box;
 }
-
+.button a {
+   text-decoration: none;
+}
 .gallery_item caption{
     display: block;
 }
