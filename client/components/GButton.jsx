@@ -8,13 +8,9 @@ class GButton extends React.Component {
       super (props)
    }
 
-   handleClick (e) {
-      this.setState ( {clicked: !this.state.clicked} )
-   }
-
    render (){
       return (
-         <button className='button' onClick={ (e) => this.handleClick (e) }>
+         <button className='button'>
             <Link to='/gallery'> No thanks! I wanna see the gallery
             </Link>
          </button>
@@ -24,3 +20,8 @@ class GButton extends React.Component {
 }
 
 export default GButton
+
+
+// handleClick (e) {
+//    this.setState ( {clicked: !this.state.clicked} )
+// }

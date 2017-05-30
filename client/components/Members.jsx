@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Home from './Home'
+import data from '../../memberData/data'
 
 const Members = props => {
     return (
       <div className= 'membershipSignup'>
-         <table class="u-full-width">
+         <table className="u-full-width">
             <thead>
                <tr>
                <th>Name</th>
@@ -14,18 +14,30 @@ const Members = props => {
                <th>Phone</th>
                <th>Address</th>
                </tr>
+               {renderMembers(data)}
             </thead>
-            <tbody>
-               <tr>
-               <td>{props.name}</td>
-               <td>{props.email}</td>
-               <td>{props.phone}</td>
-               <td>{props.address}</td>
-               </tr>
-            </tbody>
          </table>
       </div>
  )
 }
 
+function renderMembers (membersArray) {
+  return membersArray.members.map((member) => {
+     return renderMember(member)
+   // return <memberData key={member.id}/>
+  })
+}
+
 export default Members
+
+
+function renderMember(member){
+   return (
+      <tr>
+      <td>{member.name}</td>
+      <td>{member.email}</td>
+      <td>{member.phone}</td>
+      <td>{member.address}</td>
+      </tr>
+   )
+}

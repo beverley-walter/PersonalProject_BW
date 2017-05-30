@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 import Home from './Home'
 
@@ -31,6 +31,10 @@ const Form = props => {
         <div className="row">
            <div className="twelve columns">
               <input className="button" type="submit" value="Submit" />
+              <button className="button" type="submit" value="Submit" >
+                 <Link to='/members'> Save details</Link>
+              </button>
+
            </div>
         </div>
      </form>
