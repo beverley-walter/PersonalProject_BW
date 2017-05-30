@@ -3740,6 +3740,7 @@ const Home = props => {
       'You will be able to use your new login information to kit your little-ones out with the cutest pre-loved clothing.'
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__PButton__["a" /* default */], null),
+    '\xA0\xA0\xA0',
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__GButton__["a" /* default */], null)
   );
 };
@@ -11111,7 +11112,9 @@ module.exports = getIteratorFn;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Form__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Gallery__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Members__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Gallery__ = __webpack_require__(100);
+
 
 
 
@@ -11128,8 +11131,9 @@ const App = () => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_2__Home__["a" /* default */] }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/form', component: __WEBPACK_IMPORTED_MODULE_2__Home__["a" /* default */] }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/form', component: __WEBPACK_IMPORTED_MODULE_3__Form__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/gallery', component: __WEBPACK_IMPORTED_MODULE_4__Gallery__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/gallery/:id', component: __WEBPACK_IMPORTED_MODULE_4__Gallery__["a" /* default */] })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/members/', component: __WEBPACK_IMPORTED_MODULE_4__Members__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/gallery', component: __WEBPACK_IMPORTED_MODULE_5__Gallery__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { path: '/gallery/:id', component: __WEBPACK_IMPORTED_MODULE_5__Gallery__["a" /* default */] })
   )
 );
 
@@ -11164,7 +11168,7 @@ module.exports = __webpack_require__(136);
 const Form = props => {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'form',
-      null,
+      { className: 'membersForm' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
          'div',
          { className: 'row' },
@@ -25688,6 +25692,89 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 228 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(30);
+
+
+
+
+
+const Members = props => {
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'membershipSignup' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'table',
+         { 'class': 'u-full-width' },
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'thead',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'tr',
+               null,
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'Name'
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'Email'
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'Phone'
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'Address'
+               )
+            )
+         ),
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'tbody',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'tr',
+               null,
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'td',
+                  null,
+                  props.name
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'td',
+                  null,
+                  props.email
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'td',
+                  null,
+                  props.phone
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'td',
+                  null,
+                  props.address
+               )
+            )
+         )
+      )
+   );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Members);
 
 /***/ })
 /******/ ]);
