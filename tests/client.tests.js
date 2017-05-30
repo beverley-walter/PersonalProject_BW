@@ -1,8 +1,10 @@
+import './setup-dom'
 import test from 'ava'
 import React from 'react'
 import nock from 'nock'
 import { shallow, mount, render } from 'enzyme'
 
+import * as api from '../../client/api'
 import App from '../client/components/App'
 
 var test = require('ava')
@@ -17,6 +19,14 @@ test.cb('Localhost connects', t => {
    var scope = nock('http://localhost:3000/')
    .get('/#')
    .replpy (200, expected)
+})
+
+
+App.prototype.componentDidMount = () => {}
+
+test('<App />', t => {
+  const wrapper = shallow(<App />)
+  t.is(wrapper.find('h1').text(),'Book Clubbed!')
 })
 
 test.todo('App contains a loading logo element')
