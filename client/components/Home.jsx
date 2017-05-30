@@ -15,7 +15,7 @@ const Home = (props) => {
       <p>
         You will be able to use your new login information to kit your little-ones out with the cutest pre-loved clothing.
       </p>
-      <PButton />
+      <PButton />&nbsp;&nbsp;&nbsp;
       <GButton />
     </div>
   )

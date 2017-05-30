@@ -5,7 +5,7 @@ import Home from './Home'
 
 const Form = props => {
     return (
-     <form>
+     <form className = 'membersForm'>
         <div className="row">
            <div className="six columns">
               <label for="nameInput">Name</label>
