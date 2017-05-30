@@ -11296,7 +11296,7 @@ const Gallery = props => {
                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                ' For Age: 3-6 months '
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../images/babyg_1.jpg', alt: 'Clothing Photo' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'images/babyg_1.jpg', alt: 'Clothing Photo' })
          )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -11312,7 +11312,7 @@ const Gallery = props => {
                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                ' For Age: 3-6 months '
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../images/babyg_2.jpg', alt: 'Clothing Photo' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'images/babyg_2.jpg', alt: 'Clothing Photo' })
          )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -11328,7 +11328,7 @@ const Gallery = props => {
                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
                ' For Age: 0-3 months '
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../images/babyg_3.jpg', alt: 'Clothing Photo' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'images/babyg_3.jpg', alt: 'Clothing Photo' })
          )
       )
    );
