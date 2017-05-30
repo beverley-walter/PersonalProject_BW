@@ -11163,71 +11163,63 @@ module.exports = __webpack_require__(136);
 
 const Form = props => {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'span',
+      'form',
       null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
          'div',
-         { className: 'container' },
+         { className: 'row' },
          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'form',
-            null,
+            'div',
+            { className: 'six columns' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-               'div',
-               { className: 'row' },
-               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'six columns' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                     'label',
-                     { 'for': 'nameInput' },
-                     'Name'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'text', placeholder: 'Mia Nameo', id: 'nameInput' })
-               ),
-               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'six columns' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                     'label',
-                     { 'for': 'exampleEmailInput' },
-                     'Email'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'email', placeholder: 'test@mailbox.com', id: 'exampleEmailInput' })
-               )
+               'label',
+               { 'for': 'nameInput' },
+               'Name'
             ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'text', placeholder: 'Mia Nameo', id: 'nameInput' })
+         ),
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'six columns' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-               'div',
-               { className: 'row' },
-               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'four columns' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                     'label',
-                     { 'for': 'phoneInput' },
-                     'Phone'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'tel', placeholder: '012 345 6789', id: 'phoneInput' })
-               ),
-               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'eight columns' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                     'label',
-                     { 'for': 'addressInput' },
-                     'Address'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'text', placeholder: '1 Home Place, Welivehere, Wellington', id: 'addressInput' })
-               )
+               'label',
+               { 'for': 'exampleEmailInput' },
+               'Email'
             ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'email', placeholder: 'test@mailbox.com', id: 'exampleEmailInput' })
+         )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'div',
+         { className: 'row' },
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'four columns' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-               'div',
-               { className: 'row' },
-               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  'div',
-                  { className: 'twelve columns' },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'button', type: 'submit', value: 'Submit' })
-               )
-            )
+               'label',
+               { 'for': 'phoneInput' },
+               'Phone'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'tel', placeholder: '012 345 6789', id: 'phoneInput' })
+         ),
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'eight columns' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'label',
+               { 'for': 'addressInput' },
+               'Address'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'u-full-width', type: 'text', placeholder: '1 Home Place, Welivehere, Wellington', id: 'addressInput' })
+         )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'div',
+         { className: 'row' },
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'twelve columns' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'button', type: 'submit', value: 'Submit' })
          )
       )
    );
@@ -11298,9 +11290,9 @@ const Gallery = props => {
             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
             { to: '/' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-               'caption',
+               'span',
                { className: 'button', 'for': 'Baby Grow 1' },
-               ' Awesome! '
+               ' Awesome! For Age: 3-6 months '
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/images/babyg_1.jpg', alt: 'Clothing Photo' })
          )
@@ -11312,9 +11304,9 @@ const Gallery = props => {
             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
             { to: '/' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-               'caption',
+               'span',
                { className: 'button', 'for': 'Baby Grow 2' },
-               ' Cute! '
+               ' Cute! For Age: 3-6 months '
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/images/babyg_2.jpg', alt: 'Clothing Photo' })
          )
@@ -11326,9 +11318,9 @@ const Gallery = props => {
             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
             { to: '/' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-               'caption',
+               'span',
                { className: 'button', 'for': 'Baby Grow 3' },
-               ' Perfect! '
+               ' Perfect! For Age: 0-3 months '
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/images/babyg_3.jpg', alt: 'Clothing Photo' })
          )
