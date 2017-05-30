@@ -198,9 +198,11 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
     cursor: pointer;
     box-sizing: border-box;
 }
-.button a {
+
+.button a , .gallery_item a{
    text-decoration: none;
 }
+
 .gallery_item caption{
     display: block;
 }
