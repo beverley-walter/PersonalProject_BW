@@ -18,7 +18,7 @@ test.cb('Localhost connects', t => {
    var expected = {}
    var scope = nock('http://localhost:3000/')
    .get('/#')
-   .replpy (200, expected)
+   .reply (200, expected)
 })
 
 

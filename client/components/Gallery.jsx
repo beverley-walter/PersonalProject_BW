@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 const Gallery = props => {
+  //put the gallery data into a data object, and then the db
     return (
       <div className= 'gallery'>
             <div className="gallery_item four columns">

@@ -7,6 +7,7 @@ import Members from './Members'
 import Gallery from './Gallery'
 
 
+//extract the form into the home component
 const App = () => (
   <Router>
     <div>

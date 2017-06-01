@@ -12,7 +12,7 @@ configureDatabase(test)
 
 var db = require('../../server/db')
 
-test('getAllData returns array with at least id, date and mood', function (t) {
+test.skip('getAllData returns array with at least id, date and mood', function (t) {
   return db.getAllData(t.context.connection)
     .then(function(result) {
       t.not(result.data[0].date, undefined)
