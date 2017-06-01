@@ -2,7 +2,15 @@ import React from 'react'
 import PButton from './PButton'
 import GButton from './GButton'
 
+//import form
+
 const Home = (props) => {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     showForm: false
+  //   }
+  // }
   return(
     <div>
       <h1><b>Hi! Welcome to Gurgl</b></h1>
@@ -15,8 +23,9 @@ const Home = (props) => {
       <p>
         You will be able to use your new login information to kit your little-ones out with the cutest pre-loved clothing.
       </p>
-      <PButton />
-      <GButton />
+      <PButton />&nbsp;&nbsp;&nbsp;
+      <GButton toggleForm={this.toggleForm} />
+      {//this.state.showForm ? <form></form> : ''}
     </div>
   )
 }
